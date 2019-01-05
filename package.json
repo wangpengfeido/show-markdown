@@ -1,0 +1,23 @@
+{
+  "name": "show-markdown",
+  "version": "1.0.0",
+  "description": "显示markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangpengfeido/show-markdown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangpengfeido/show-markdown/issues"
+  },
+  "homepage": "https://github.com/wangpengfeido/show-markdown#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
+  }
+}

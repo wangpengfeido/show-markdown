@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="./index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div id="app">
+    <div class="url">
+      markdown markdownUrl:{{markdownUrl}}
+    </div>
+    <div>
+      <label><input type="checkbox" v-model="useSourceTransform">启用引用资源转换</label>
+    </div>
+    <div class="buttons">
+      <button type="button" @click="handleChangeShowing('markdown')">显示原markdown</button>
+      <button type="button" @click="handleChangeShowing('html')">显示html</button>
+      <button type="button" @click="handleChangeShowing('page')">显示页面</button>
+    </div>
+    <div class="show-box">
+      <pre v-if="showing==='markdown'">{{markdown}}</pre>
+      <pre v-if="showing==='html'">{{html}}</pre>
+      <div v-if="showing==='page'" v-html="html"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/url-parse"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
