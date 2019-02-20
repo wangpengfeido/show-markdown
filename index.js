@@ -5,6 +5,10 @@ const app = express();
 
 app.use(express.static('public'));
 
+app.get('/', function (req, res) {
+  res.redirect('/show-markdown/title-page/title-page.html');
+});
+
 app.use('/getByUrl', function (req, res, next) {
   const url = req.query.url;
   if (!url) {
