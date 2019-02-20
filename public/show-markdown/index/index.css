@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.show-box {
+    margin: 20px;
+}
+
+.error {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+.loading-page {
+    background-color: #808080;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-page .loading-page__text {
+    color: white;
+    font-size: 20px;
+}
+
+
+

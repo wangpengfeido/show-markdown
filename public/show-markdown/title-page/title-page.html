@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>markdown 显示</title>
+  <link href="./title-page.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div id="app" class="app">
+    <form>
+      <div>
+        <label>markdown url:<textarea class="url-textarea" v-model="markdownUrl"></textarea></label>
+      </div>
+      <div>
+        <label><input type="checkbox" v-model="useSourceTransform">启用引用资源转换（文档中资源加载不出时可以尝试开启此项）</label>
+      </div>
+      <div>
+        <button type="button" @click="handleGo()">走你</button>
+      </div>
+    </form>
+    <div class="github">
+      <a href="https://github.com/wangpengfeido/show-markdown" target="_blank">github:https://github.com/wangpengfeido/show-markdown</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js"></script>
+  <script src="./title-page.js"></script>
+</body>
+</html>
